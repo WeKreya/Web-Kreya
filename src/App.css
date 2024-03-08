@@ -1,0 +1,66 @@
+/* NEW */
+.new {
+  display: flex;
+  height: 0;
+  width: 100%;
+  padding: 0 100px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--Neutral-s-4);
+  background-color: var(--Neutral-1);
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.new.active {
+  height: max-content;
+  padding: 12px 100px;
+}
+
+.new-contact,
+.new-contact-wa,
+.new-contact-email {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  padding: 12px 100px;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--Neutral-0);
+}
+
+.navbar-link > ul {
+  display: flex;
+}
+
+.navbar-link > ul > li {
+  list-style: none;
+  padding: 24px;
+}
+
+.navbar-link a {
+  cursor: pointer;
+}
+
+.navbar-contact button {
+  padding: 12px 24px;
+  background-color: var(--PLight-1);
+  border: 1px solid var(--PLight-1);
+  border-radius: 100px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+.navbar-contact button:hover {
+  background-color: var(--Neutral);
+  border: 1px solid var(--Neutral-0);
+}
