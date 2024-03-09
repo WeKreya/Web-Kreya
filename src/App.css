@@ -3,7 +3,7 @@
   display: flex;
   height: 0;
   width: 100%;
-  padding: 0 100px;
+  padding: 0 6vw;
   justify-content: space-between;
   align-items: center;
   font-size: 14px;
@@ -16,7 +16,7 @@
 
 .new.active {
   height: max-content;
-  padding: 12px 100px;
+  padding: 12px 6vw;
 }
 
 .new-contact,
@@ -30,7 +30,7 @@
 /* NAVBAR */
 .navbar {
   display: flex;
-  padding: 12px 100px;
+  padding: 12px 6vw;
   justify-content: space-between;
   align-items: center;
   color: var(--Neutral-0);
@@ -50,6 +50,9 @@
 }
 
 .navbar-contact button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
   padding: 12px 24px;
   background-color: var(--PLight-1);
   border: 1px solid var(--PLight-1);
@@ -57,10 +60,79 @@
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .navbar-contact button:hover {
+  background-color: var(--Neutral);
+  border: 1px solid var(--Neutral-0);
+}
+
+/* MAIN */
+.main {
+  padding: 0 6vw;
+}
+
+.main-title {
+  display: flex;
+  margin: 32px 0;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-title h1 {
+  font-size: 95px;
+  font-weight: 500;
+}
+
+.main-title-name {
+  display: flex;
+  position: relative;
+  gap: 24px;
+}
+
+.main-title-name.p2 div {
+  width: 250px;
+  height: 115px;
+  border-radius: 100px;
+  background-color: aqua;
+}
+.main-title-name.p3 div {
+  width: 250px;
+  height: 115px;
+  border-radius: 100px;
+  background-color: aqua;
+}
+
+.main-subtitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-subtitle button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 24px;
+  background-color: var(--PLight-1);
+  border: 1px solid var(--PLight-1);
+  border-radius: 100px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.main-subtitle p {
+  width: 480px;
+  font-style: normal;
+  font-weight: 400;
+  color: var(--Neutral-5);
+}
+
+.main-subtitle button:hover {
   background-color: var(--Neutral);
   border: 1px solid var(--Neutral-0);
 }

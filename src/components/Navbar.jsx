@@ -1,4 +1,5 @@
 import React from "react";
+import { MdOutlineArrowOutward } from "react-icons/md";
 import Logo from "../assets/icon/logoKreyaFull.svg?react";
 
 function Navbar() {
@@ -9,15 +10,21 @@ function Navbar() {
       </div>
       <div className="navbar-link">
         <ul>
-          <li><a>Template</a></li>
-          <li><a>Cara Pembelian</a></li>
-          <li><a>Harga</a></li>
-          <li><a>Portofolio</a></li>
-          <li><a>FAQ</a></li>
+          <li>
+            <a>Layanan</a>
+          </li>
+          <li>
+            <a>Portofolio</a>
+          </li>
+          <li>
+            <a>About</a>
+          </li>
         </ul>
       </div>
       <div className="navbar-contact">
-        <button>Konsultasi Website</button>
+        <button>
+          Konsultasi Website <MdOutlineArrowOutward />
+        </button>
       </div>
     </div>
   );
