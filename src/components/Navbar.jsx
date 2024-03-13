@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <div className="navbar">
       <div className="navbar-logo">
-        <Logo width="130px" />
+        <Logo width="130px" fill="#FFFFFF" />
       </div>
       <div className="navbar-link">
         <ul>
@@ -23,7 +23,7 @@ function Navbar() {
       </div>
       <div className="navbar-contact">
         <button>
-          Konsultasi Website <MdOutlineArrowOutward />
+          Hubungi Kami <MdOutlineArrowOutward />
         </button>
       </div>
     </div>
