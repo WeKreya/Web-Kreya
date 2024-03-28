@@ -1,6 +1,7 @@
 import React from "react";
-import { listPackage } from "../listPackage";
-import { FaCheck } from "react-icons/fa6";
+import { listPackage } from "../../listPackage";
+import { FaCheckCircle } from "react-icons/fa";
+import "./package.css";
 
 function Package() {
   function rupiah(amount) {
@@ -17,27 +18,43 @@ function Package() {
   }
   return (
     <div className="package">
-      <h4>Harga Paket Jasa Pembuatan Website</h4>
+      <div className="package-title">
+        <h4>Harga Paket Jasa Pembuatan Website</h4>
+        <p>
+          Kami memberikan beberapa pilihan paket yang sesuai dengan apa ada
+          butuhkan.
+        </p>
+      </div>
       <div className="package-list">
         {listPackage.map((list, i) => {
           return (
             <div className="package-list-contain" key={list.id}>
-              <h5>{list.name}</h5>
-              <div className="package-list-contain-price">
-                <p>Rp</p>
-                <h2>{rupiah(list.harga)}</h2>
-                <p>/Tahun</p>
-              </div>
               {list.key ? (
-                <div className="package-list-contain-key">{list.key}</div>
+                <div className="package-list-contain-key">
+                  <p>{list.key}</p>
+                </div>
               ) : null}
-              <div className="package-divider"></div>
+              <div className="package-list-contain-title">
+                <h5>{list.name}</h5>
+                <p>{list.description}</p>
+              </div>
+              {typeof list.harga === "number" ? (
+                <div className="package-list-contain-price">
+                  <p>Rp</p>
+                  <h2>{rupiah(list.harga)}</h2>
+                  <p>/Tahun</p>
+                </div>
+              ) : (
+                <div className="package-list-contain-price">
+                  <h2>{list.harga}</h2>
+                </div>
+              )}
               <div className="package-list-contain-fitur">
                 <ul>
                   {list.fitur.map((fitur, i) => {
                     return (
                       <div className="package-list-contain-fitur-item">
-                        <FaCheck className="icon-check" />
+                        <FaCheckCircle className="icon-check" />
                         <li>{fitur}</li>
                       </div>
                     );

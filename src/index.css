@@ -12,6 +12,17 @@
   --PLight-3:#FFF199;
   --PLight-4:#FFF199;
 
+  --SDark-1:#00061E;
+  --SDark-2:#000825;
+  --SDark-3:#000C2E;
+  --SDark-4:#001037;
+
+  --SLight-0:#011640;
+  --SLight-1:#244A8C;
+  --SLight-2:#507FC5;
+  --SLight-3:#8FB7EB;
+  --SLight-4:#C5DBF5;
+
   --Neutral-0:#09101D;
   --Neutral-1:#2B3A4B;
   --Neutral-2:#394452;
@@ -67,4 +78,5 @@
   margin: 0;
   padding: 0;
   font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
 }

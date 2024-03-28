@@ -1,0 +1,41 @@
+/* CTA 1 */
+.cta1 {
+  padding: 64px 6vw;
+  background-color: var(--SDark-2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2%;
+}
+
+.cta1 div:nth-child(1) {
+  width: 50%;
+}
+.cta1 div:nth-child(2) {
+  width: 40%;
+}
+
+.cta1 > div > h1 {
+  font-size: 64px;
+  font-weight: 700;
+  color: var(--Neutral);
+}
+.cta1 > div > p {
+  font-weight: 400;
+  color: var(--Neutral);
+}
+
+.cta1 button {
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+  padding: 12px 24px;
+  background-color: var(--SLight-1);
+  border: 1px solid var(--SLight-1);
+  color: var(--Neutral);
+  border-radius: 100px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}

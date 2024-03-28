@@ -1,5 +1,7 @@
 import React from "react";
 import { TbStarFilled } from "react-icons/tb";
+import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import './main.css'
 
 function Main() {
   return (
@@ -9,10 +11,9 @@ function Main() {
           <h1>Buat Websitemu</h1>
         </div>
         <div className="main-title-name p2">
-          <h1>Menjadi Profesional</h1>
-        </div>
-        <div className="main-title-name p3">
-          <h1>Bersama Kita!</h1>
+          <h1>Menjadi Profesional Bersama</h1>
+          <h1>Kreya</h1>
+          <h1>!</h1>
         </div>
         <p>
           Wujudkan desain website profesional untuk bisnis impian yang mudah
@@ -25,13 +26,17 @@ function Main() {
           Bikin Websitemu Sekarang! <TbStarFilled />
         </button>
       </div>
-      {/* <div className="main-contain">
-        <div className="main-contain-content-1"></div>
-        <div className="main-contain-content-2"></div>
-        <div className="main-contain-content-3"></div>
-        <div className="main-contain-content-4"></div>
-        <div className="main-contain-content-5"></div>
-      </div> */}
+      <div className="main-contain">
+        <button className="main-contain-button b1">
+          <FaFacebook />
+        </button>
+        <button className="main-contain-button b2">
+          <FaInstagram />
+        </button>
+        <button className="main-contain-button b3">
+          <FaWhatsapp />
+        </button>
+      </div>
     </div>
   );
 }

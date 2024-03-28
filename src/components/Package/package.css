@@ -1,0 +1,110 @@
+/* PACKAGE */
+.package {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px 6vw;
+  gap: 64px;
+}
+.package-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.package-title > h4 {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.package-list {
+  display: flex;
+  gap: 24px;
+}
+
+.package-list-contain {
+  height: max-content;
+  width: 25vw;
+  padding: 0 24px;
+  background-color: var(--Neutral-s-4);
+  border-radius: 24px;
+  transition: all 0.1s ease-in-out;
+}
+
+.package-list-contain:hover {
+  transform: scale(1.01);
+  background-color: var(--Neutral-s-3);
+  box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.08);
+}
+.package-list-contain-key {
+  display: flex;
+  justify-content: end;
+}
+
+.package-list-contain-key > p {
+  padding: 10px 20px;
+  color: var(--Neutral);
+  border-radius: 0 0 16px 16px;
+  background-color: var(--SLight-1);
+}
+
+.package-list-contain-title {
+  padding: 32px 0 12px;
+}
+.package-list-contain-title > h5 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  color: var(--SLight-1);
+}
+.package-list-contain-title > p {
+  font-size: 12px;
+  color: var(--Neutral-3);
+}
+
+.package-list-contain-price {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.package-list-contain-price > h2 {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.package-list-contain-fitur {
+  padding: 32px 24px;
+  background-color: var(--Neutral);
+  border-radius: 24px;
+}
+
+.package-list-contain-fitur-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  gap: 6px;
+}
+
+.package-list-contain-fitur-item > .icon-check {
+  color: var(--SLight-1);
+}
+.package-list-contain-fitur-item li {
+  list-style: none;
+  font-size: 14px;
+  color: var(--Neutral-3);
+}
+
+.package-list-contain-button{
+display: flex;
+justify-content: center;
+padding: 32px 0;
+}
+.package-list-contain-button>button {
+  padding: 12px 24px;
+  border: none;
+  background-color: var(--SLight-1);
+  color: var(--Neutral);
+  border-radius: 24px;
+  cursor: pointer;
+}

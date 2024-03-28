@@ -2,6 +2,7 @@ export const listPackage = [
   {
     id: 1,
     name: "Basic",
+    description:"Sempurna untuk startup & pendiri yang membutuhkan pekerjaan desain dan ingin berkembang.",
     harga: 1000000,
     fitur: [
       "5 Halaman",
@@ -18,9 +19,10 @@ export const listPackage = [
   },
   {
     id: 2,
-    name: "Basic",
-    harga: 1750000,
     key: "Rekomendasi",
+    name: "Standard",
+    description:"Sempurna untuk startup & pendiri yang membutuhkan pekerjaan desain dan ingin berkembang.",
+    harga: 1750000,
     fitur: [
       "5 Halaman",
       "5 Hari Pengerjaan",
@@ -37,7 +39,8 @@ export const listPackage = [
   {
     id: 3,
     name: "Basic",
-    harga: 2000000,
+    description:"Sempurna untuk startup & pendiri yang membutuhkan pekerjaan desain dan ingin berkembang.",
+    harga: 'Custom Prize',
     fitur: [
       "5 Halaman",
       "5 Hari Pengerjaan",

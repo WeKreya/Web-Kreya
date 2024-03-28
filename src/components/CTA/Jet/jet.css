@@ -1,0 +1,56 @@
+.jet {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.jet::before {
+  content: "";
+  position: absolute;
+  width: 90vw;
+  height: 50vh;
+  z-index: -1;
+  border-radius: 24px;
+  background-color: var(--Neutral-s-4);
+}
+
+.jet-image {
+}
+
+.jet-content {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  padding: 0 50px;
+}
+
+.jet-content > h1 {
+  font-size: 40px;
+  color: var(--SLight-1);
+}
+.jet-content > p {
+}
+
+.jet-content > button {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  gap: 12px;
+  padding: 12px 24px;
+  margin-top: 24px;
+  background-color: var(--SLight-1);
+  border: 1px solid var(--Neutral-0);
+  color: var(--Neutral);
+  border-radius: 100px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.jet-content > button:hover {
+  background-color: var(--Neutral);
+  color: var(--Neutral-0);
+  border: 1px solid var(--Neutral-0);
+}
